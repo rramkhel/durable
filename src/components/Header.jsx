@@ -25,6 +25,9 @@ const Header = () => {
             <Link to="/rationale" className="text-gray-600 hover:text-gray-900 transition-colors">
               Rationale
             </Link>
+            <Link to="/letstalk" className="text-gray-600 hover:text-gray-900 transition-colors">
+              Let's Talk
+            </Link>
           </nav>
           <a
             href="mailto:rachel.ramkhelawan@gmail.com"

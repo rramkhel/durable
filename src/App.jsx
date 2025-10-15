@@ -8,6 +8,7 @@ import Local from './pages/Local';
 import Advisor from './pages/Advisor';
 import Rationale from './pages/Rationale';
 import Presentation from './pages/Presentation';
+import LetsTalk from './pages/LetsTalk';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/advisor" element={<Advisor />} />
             <Route path="/rationale" element={<Rationale />} />
             <Route path="/presentation" element={<Presentation />} />
+            <Route path="/letstalk" element={<LetsTalk />} />
           </Routes>
         </main>
         <Footer />
