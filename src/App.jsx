@@ -10,7 +10,7 @@ import Rationale from './pages/Rationale';
 
 function App() {
   return (
-    <Router basename="/durable-pm-portfolio">
+    <Router>
       <div className="min-h-screen flex flex-col bg-gray-50">
         <Header />
         <main className="flex-grow">
