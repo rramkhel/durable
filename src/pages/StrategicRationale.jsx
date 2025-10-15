@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Search, Users, Target, TrendingUp, DollarSign, CheckCircle, AlertTriangle, Lightbulb, BarChart3 } from 'lucide-react';
 
-const Rationale = () => {
+const StrategicRationale = () => {
   const [expandedSection, setExpandedSection] = useState(null);
 
   return (
@@ -483,4 +483,4 @@ const Rationale = () => {
   );
 };
 
-export default Rationale;
+export default StrategicRationale;

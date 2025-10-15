@@ -7,6 +7,7 @@ import Guardian from './pages/Guardian';
 import Local from './pages/Local';
 import Advisor from './pages/Advisor';
 import Rationale from './pages/Rationale';
+import Presentation from './pages/Presentation';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/local" element={<Local />} />
             <Route path="/advisor" element={<Advisor />} />
             <Route path="/rationale" element={<Rationale />} />
+            <Route path="/presentation" element={<Presentation />} />
           </Routes>
         </main>
         <Footer />
