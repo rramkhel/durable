@@ -74,30 +74,31 @@ const Home = () => {
       </div>
 
       {/* About Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
         <div className="max-w-3xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">About This Project</h2>
           <div className="prose prose-lg text-gray-700 leading-relaxed">
-            <p className="mb-4">
-              Durable's mission is to make owning a business easier than having a job. But user reviews reveal gaps: "Limited SEO capabilities," "Great for starting but need help growing," "What do I do next?"
+            <p className="mb-6">
+              Durable's mission is to make owning a business easier than having a job, a powerful foundation for empowering small business owners with AI. This project examines how that mission can extend beyond website creation, identifying opportunities where Durable can help users grow, not just start. Grounded in the analysis of 50+ user reviews, the work maps real pain points to high-impact feature concepts and working prototypes. The study demonstrates structured research, rapid synthesis, and measurable outcomes, illustrating how AI can drive durable (and scalable) business success.
             </p>
-            <p className="mb-4">
-              This project addresses those challenges with three AI-powered features built as working prototypes. Each one tackles a real pain point discovered through analysis of 50+ user reviews:
+            <p className="mb-2">
+              <strong>Rooted in data:</strong> insights drawn from 50+ real user reviews revealing consistent friction points and unmet growth needs.
             </p>
-            <p className="mb-4">
-              <strong>Guardian</strong> predicts churn before users abandon their businesses<br />
-              <strong>Local</strong> automates the SEO expertise service businesses lack<br />
-              <strong>Advisor</strong> provides the strategic guidance users need to succeed
+            <p className="mb-2">
+              <strong>Designed for outcomes:</strong> feature prototypes focused on measurable impact — 30% churn reduction, 300% visibility increase, 45% faster revenue growth.
+            </p>
+            <p className="mb-6">
+              <strong>Built with intent:</strong> each solution connects user behavior, business metrics, and AI capability into a coherent product strategy.
             </p>
             <p>
-              The approach: user research → problem validation → AI-native solutions → measurable business impact. Built with Durable's DIFY philosophy at the core—AI that does the work, not just suggests it.
+              The result is a pragmatic, AI-native approach to product development that transforms user insight into durable business results.
             </p>
           </div>
         </div>
       </div>
 
       {/* Features Grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16">
         <h2 className="text-3xl font-bold text-gray-900 mb-12">The Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature) => {
@@ -149,7 +150,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">My Approach</h2>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
               {[
                 { step: '01', title: 'Research', desc: 'Analyzed 50+ user reviews to identify pain points' },
                 { step: '02', title: 'Validate', desc: 'Cross-referenced with job postings and competitor analysis' },
@@ -165,32 +166,31 @@ const Home = () => {
                 </div>
               ))}
             </div>
+            <div className="flex justify-center">
+              <Link
+                to="/rationale"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors font-medium"
+              >
+                View Product Strategy
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* CTA Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl p-8 md:p-12 text-center text-white">
-          <h2 className="text-3xl font-bold mb-4">Designed for Small Business Success</h2>
-          <p className="text-lg text-purple-100 mb-6 max-w-2xl mx-auto">
-            Each feature addresses real challenges: getting found locally, understanding if they're on track, and knowing what to do next. Built with the philosophy that AI should do the work, not just suggest it.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Link
-              to="/rationale"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-white text-gray-900 rounded-lg hover:bg-gray-100 transition-colors font-medium"
-            >
-              Read Product Rationale
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      {/* Stats Section */}
-      <div className="bg-gray-900 text-white py-12">
+      {/* Stats & CTA Section */}
+      <div className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* CTA Content */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-purple-400 mb-4">Designed for Small Business Success</h2>
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+              Each feature addresses real challenges: getting found locally, understanding if they're on track, and knowing what to do next. Built with the philosophy that AI should do the work, not just suggest it.
+            </p>
+          </div>
+
+          {/* Stats Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
               { number: '30%', label: 'Projected Churn Reduction' },

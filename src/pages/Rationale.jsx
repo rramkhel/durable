@@ -14,9 +14,9 @@ const Rationale = () => {
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Home
           </Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Strategic Rationale</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Product Strategy</h1>
           <p className="text-xl text-gray-300 mb-8">
-            Complete product thinking behind the three AI features for Durable
+            Complete rationale and product thinking behind the three AI features for Durable
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="bg-white/10 backdrop-blur rounded-lg p-4">
@@ -50,9 +50,7 @@ const Rationale = () => {
           
           <div className="prose max-w-none text-gray-700 mb-6">
             <p className="text-lg">
-              When approaching the Durable PM role, I didn't just want to submit a resume—I wanted to demonstrate 
-              how I think about product problems. So I built three working prototypes that address real user pain points 
-              I discovered through research.
+              Built to show how thoughtful product work begins with real user pain, this project moves from insight to impact through research, prioritization, prototyping, and clear success measures.
             </p>
           </div>
 
@@ -92,7 +90,7 @@ const Rationale = () => {
             <div className="border-l-4 border-purple-500 pl-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">1. User Review Analysis (50+ reviews)</h3>
               <p className="text-gray-700 mb-4">
-                I analyzed reviews across G2, TrustPilot, Reddit, and Product Hunt to identify recurring pain patterns 
+                Analysis of reviews across G2, TrustPilot, Reddit, and Product Hunt to identify recurring pain patterns 
                 and unmet needs.
               </p>
               <div className="bg-purple-50 rounded-lg p-4">
@@ -143,7 +141,7 @@ const Rationale = () => {
             <div className="border-l-4 border-green-500 pl-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Industry Research (Local SEO & AI Trends)</h3>
               <p className="text-gray-700 mb-4">
-                I researched local SEO challenges for small businesses and AI automation capabilities in 2025.
+                Researched local SEO challenges for small businesses and AI automation capabilities in 2025.
               </p>
               <div className="bg-green-50 rounded-lg p-4">
                 <p className="font-semibold text-gray-900 mb-2">Market Insights:</p>
@@ -168,7 +166,7 @@ const Rationale = () => {
             <div className="border-l-4 border-orange-500 pl-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Competitive Gap Analysis</h3>
               <p className="text-gray-700 mb-4">
-                I analyzed what competitors (Wix, Squarespace, Webflow) are building and where white space exists.
+                Analysis of what competitors (Wix, Squarespace, Webflow) are building and where white space exists.
               </p>
               <div className="bg-orange-50 rounded-lg p-4">
                 <p className="font-semibold text-gray-900 mb-2">Opportunity Identified:</p>
@@ -261,7 +259,7 @@ const Rationale = () => {
           </div>
 
           <p className="text-gray-700 mb-6">
-            I evaluated ~20 potential features using a custom framework I call <strong>IMRU</strong>, which helped me 
+            Evaluation of ~20 potential features using a custom framework <strong>IMRU</strong>, which helped  
             identify the three highest-impact opportunities.
           </p>
 
@@ -475,6 +473,128 @@ const Rationale = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Product Strategy Approach */}
+        <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-xl p-8 shadow-sm">
+          <div className="flex items-center gap-3 mb-6">
+            <Target className="w-6 h-6 text-purple-400" />
+            <h2 className="text-2xl font-bold">Product Strategy Approach</h2>
+          </div>
+
+          <p className="text-gray-300 mb-8 text-lg">
+            Principles and mechanics that guide product development and decision-making:
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Principle 1 */}
+            <div className="bg-white/10 backdrop-blur rounded-lg p-6 hover:bg-white/15 transition-colors">
+              <div className="flex items-start gap-3 mb-3">
+                <span className="flex-shrink-0 w-8 h-8 bg-purple-500/20 text-purple-300 rounded-full flex items-center justify-center font-bold text-sm">
+                  1
+                </span>
+                <h3 className="text-lg font-bold text-white">
+                  Problem framing as a testable thesis
+                </h3>
+              </div>
+              <p className="text-gray-300 leading-relaxed text-sm pl-11">
+                Translate vague user problems into crisp hypotheses: "If X is simplified, then Y metric will improve."
+                Each hypothesis includes a target metric, acceptance criteria, and a shortest-path experiment.
+              </p>
+            </div>
+
+            {/* Principle 2 */}
+            <div className="bg-white/10 backdrop-blur rounded-lg p-6 hover:bg-white/15 transition-colors">
+              <div className="flex items-start gap-3 mb-3">
+                <span className="flex-shrink-0 w-8 h-8 bg-purple-500/20 text-purple-300 rounded-full flex items-center justify-center font-bold text-sm">
+                  2
+                </span>
+                <h3 className="text-lg font-bold text-white">
+                  Evidence-first discovery
+                </h3>
+              </div>
+              <p className="text-gray-300 leading-relaxed text-sm pl-11">
+                Combine targeted qualitative interviews with quick, instrumented prototypes to confirm behavioral
+                patterns before committing engineering effort. Discovery artifacts are prioritized by
+                confidence × impact × cost.
+              </p>
+            </div>
+
+            {/* Principle 3 */}
+            <div className="bg-white/10 backdrop-blur rounded-lg p-6 hover:bg-white/15 transition-colors">
+              <div className="flex items-start gap-3 mb-3">
+                <span className="flex-shrink-0 w-8 h-8 bg-purple-500/20 text-purple-300 rounded-full flex items-center justify-center font-bold text-sm">
+                  3
+                </span>
+                <h3 className="text-lg font-bold text-white">
+                  Micro-experiments, not monoliths
+                </h3>
+              </div>
+              <p className="text-gray-300 leading-relaxed text-sm pl-11">
+                Prefer narrow, reversible bets: small feature toggles, prompt variants, and staged rollouts that
+                reveal signal quickly. Experiment designs include instrumentation and guardrails for metrics and
+                user experience.
+              </p>
+            </div>
+
+            {/* Principle 4 */}
+            <div className="bg-white/10 backdrop-blur rounded-lg p-6 hover:bg-white/15 transition-colors">
+              <div className="flex items-start gap-3 mb-3">
+                <span className="flex-shrink-0 w-8 h-8 bg-purple-500/20 text-purple-300 rounded-full flex items-center justify-center font-bold text-sm">
+                  4
+                </span>
+                <h3 className="text-lg font-bold text-white">
+                  Responsible AI product practice
+                </h3>
+              </div>
+              <p className="text-gray-300 leading-relaxed text-sm pl-11">
+                Treat models like components: define input invariants, build fallback UX for low-confidence outputs,
+                and log prompts/results for rapid iteration. Prioritize model-informed guardrails to reduce friction
+                and build trust.
+              </p>
+            </div>
+
+            {/* Principle 5 */}
+            <div className="bg-white/10 backdrop-blur rounded-lg p-6 hover:bg-white/15 transition-colors">
+              <div className="flex items-start gap-3 mb-3">
+                <span className="flex-shrink-0 w-8 h-8 bg-purple-500/20 text-purple-300 rounded-full flex items-center justify-center font-bold text-sm">
+                  5
+                </span>
+                <h3 className="text-lg font-bold text-white">
+                  Clear success criteria and operational readiness
+                </h3>
+              </div>
+              <p className="text-gray-300 leading-relaxed text-sm pl-11">
+                Ship only when a hypothesis has clear pass/fail criteria, monitoring in place, and a rollback path.
+                Ensure cross-functional ownership for long-term maintenance and data capture.
+              </p>
+            </div>
+
+            {/* Principle 6 */}
+            <div className="bg-white/10 backdrop-blur rounded-lg p-6 hover:bg-white/15 transition-colors">
+              <div className="flex items-start gap-3 mb-3">
+                <span className="flex-shrink-0 w-8 h-8 bg-purple-500/20 text-purple-300 rounded-full flex items-center justify-center font-bold text-sm">
+                  6
+                </span>
+                <h3 className="text-lg font-bold text-white">
+                  Iterate toward scale with measurable thresholds
+                </h3>
+              </div>
+              <p className="text-gray-300 leading-relaxed text-sm pl-11">
+                Scale features when leading indicators (engagement, completion, retention) and operational indicators
+                (support volume, latency, cost) meet pre-defined thresholds. Use cohort analysis to avoid mistaken
+                generalizations.
+              </p>
+            </div>
+          </div>
+
+          {/* Footer note */}
+          <div className="mt-8 pt-6 border-t border-white/20">
+            <p className="text-sm text-gray-400">
+              These principles guided the development of Guardian, Local, and Advisor—from initial user research
+              through prototype implementation and impact projection.
+            </p>
           </div>
         </section>
 
