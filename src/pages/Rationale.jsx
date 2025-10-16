@@ -116,9 +116,9 @@ const Rationale = () => {
 
             {/* Source 2 */}
             <div className="border-l-4 border-blue-500 pl-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Job Posting Analysis</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Strategic Priorities Validation</h3>
               <p className="text-gray-700 mb-4">
-                I studied Durable's PM role requirements to understand strategic priorities and what the company values.
+                Cross-referenced findings with broader industry priorities: user retention, AI-native product development, and helping users achieve actual business success (not just website creation). These features align with the evolution from tool to platform.
               </p>
               <div className="bg-blue-50 rounded-lg p-4">
                 <p className="font-semibold text-gray-900 mb-2">Strategic Priorities Identified:</p>

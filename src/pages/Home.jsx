@@ -43,14 +43,13 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
           <div className="max-w-3xl">
             <div className="inline-block px-4 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm font-medium mb-6">
-              Product Manager Application
+              Product Strategy Showcase
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Three AI Features for Durable
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-              I built working prototypes that could reduce churn by 30%, increase local visibility by 300%, 
-              and accelerate revenue growth by 45%.
+              Three AI-powered features designed to help small business owners succeed. Based on analysis of 50+ user reviews and strategic priorities in the website builder space.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -167,10 +166,9 @@ const Home = () => {
       {/* CTA Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl p-8 md:p-12 text-center text-white">
-          <h2 className="text-3xl font-bold mb-4">Let's Talk Product Strategy</h2>
+          <h2 className="text-3xl font-bold mb-4">Designed for Small Business Success</h2>
           <p className="text-lg text-purple-100 mb-6 max-w-2xl mx-auto">
-            These features are just the beginning. I'd love to discuss how they could fit into Durable's roadmap 
-            and explore other opportunities to help you achieve your mission.
+            Each feature addresses real challenges: getting found locally, understanding if they're on track, and knowing what to do next. Built with the philosophy that AI should do the work, not just suggest it.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
@@ -180,12 +178,12 @@ const Home = () => {
               Read Product Rationale
               <ArrowRight className="w-4 h-4" />
             </Link>
-            <a
-              href="mailto:rachel.ramkhelawan@gmail.com"
+            <Link
+              to="/letstalk"
               className="inline-flex items-center gap-2 px-6 py-3 border-2 border-white text-white rounded-lg hover:bg-white hover:text-purple-600 transition-colors font-medium"
             >
-              Schedule a Call
-            </a>
+              Contact
+            </Link>
           </div>
         </div>
       </div>
@@ -195,10 +193,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { number: '6+', label: 'Years PM Experience' },
-              { number: '100K+', label: 'Users Launched To' },
-              { number: '63%', label: 'Conversion Boost' },
-              { number: '3', label: 'Working Prototypes' }
+              { number: '30%', label: 'Projected Churn Reduction' },
+              { number: '300%', label: 'Local Visibility Increase' },
+              { number: '50+', label: 'User Reviews Analyzed' },
+              { number: '3', label: 'Core Challenges Addressed' }
             ].map((stat, idx) => (
               <div key={idx}>
                 <div className="text-4xl font-bold text-purple-400 mb-2">{stat.number}</div>
