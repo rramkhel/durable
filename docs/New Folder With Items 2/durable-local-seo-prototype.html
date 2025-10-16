@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durable Local - SEO Automation Engine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        body {
+            background: #ffffff;
+            color: #37352f;
+            line-height: 1.6;
+        }
+        
+        .notion-divider {
+            height: 1px;
+            background: #e9e9e7;
+            margin: 2rem 0;
+        }
+        
+        .metric-card {
+            border: 1px solid #e9e9e7;
+            transition: all 0.2s ease;
+        }
+        
+        .metric-card:hover {
+            border-color: #d3d1cb;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+        
+        .action-item {
+            border-left: 2px solid transparent;
+            transition: all 0.15s ease;
+        }
+        
+        .action-item:hover {
+            border-left-color: #2383e2;
+            background: #f7f6f3;
+        }
+        
+        .progress-bar-bg {
+            background: #f1f0ee;
+        }
+        
+        .btn-primary {
+            background: #2383e2;
+            color: white;
+            border: none;
+            transition: all 0.15s ease;
+        }
+        
+        .btn-primary:hover {
+            background: #1a6ec7;
+        }
+        
+        .btn-secondary {
+            background: white;
+            border: 1px solid #e9e9e7;
+            transition: all 0.15s ease;
+        }
+        
+        .btn-secondary:hover {
+            background: #f7f6f3;
+        }
+        
+        .tag {
+            background: #f1f0ee;
+            color: #787774;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+        
+        .tag-high { background: #ffe2dd; color: #d44c47; }
+        .tag-medium { background: #fdedc8; color: #cb912f; }
+        .tag-low { background: #d3e5ef; color: #3e7cb1; }
+    </style>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="border-b" style="border-color: #e9e9e7;">
+        <div class="max-w-5xl mx-auto px-8 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <i data-lucide="map-pin" class="w-6 h-6" style="color: #2383e2;"></i>
+                    <h1 class="text-xl font-semibold">Durable Local</h1>
+                </div>
+                <div class="text-sm" style="color: #787774;">
+                    Product Concept by Rachel Ramkhelawan
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-8 py-12">
+        
+        <!-- Title & Description -->
+        <div class="mb-12">
+            <h1 class="text-5xl font-bold mb-4" style="color: #37352f;">Local SEO Automation Engine</h1>
+            <p class="text-xl mb-3" style="color: #787774;">Automatically rank #1 in "near me" searches without SEO expertise</p>
+            <div class="flex gap-2 mt-4">
+                <span class="tag">Service Businesses</span>
+                <span class="tag">SEO Automation</span>
+                <span class="tag">Growth Strategy</span>
+            </div>
+        </div>
+
+        <!-- Problem Statement -->
+        <section class="mb-16">
+            <div class="flex items-center gap-2 mb-6">
+                <i data-lucide="alert-circle" class="w-5 h-5" style="color: #d44c47;"></i>
+                <h2 class="text-2xl font-semibold">The Problem</h2>
+            </div>
+            
+            <div class="bg-gray-50 rounded-lg p-8 mb-6">
+                <div class="flex items-start gap-4 mb-6">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center" style="background: #ffe2dd;">
+                        <i data-lucide="message-square" class="w-6 h-6" style="color: #d44c47;"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold mb-2">Direct User Complaint</h3>
+                        <p class="text-lg italic mb-1" style="color: #787774;">"Limited SEO capabilities"</p>
+                        <p class="text-sm" style="color: #9b9a97;">— Actual Durable user review</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6 text-sm">
+                    <div>
+                        <h4 class="font-medium mb-2">Market Reality</h4>
+                        <ul class="space-y-1" style="color: #787774;">
+                            <li>• Only 51% of plumbers have websites</li>
+                            <li>• 250% growth in "service near me" searches</li>
+                            <li>• Beautiful website on page 7 = invisible</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium mb-2">Business Impact</h4>
+                        <ul class="space-y-1" style="color: #787774;">
+                            <li>• 6M+ Durable sites created</li>
+                            <li>• Many get zero traffic/customers</li>
+                            <li>• High churn: "not getting customers"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="notion-divider"></div>
+
+        <!-- Demo Section -->
+        <section class="mb-16">
+            <div class="flex items-center gap-2 mb-6">
+                <i data-lucide="activity" class="w-5 h-5" style="color: #2383e2;"></i>
+                <h2 class="text-2xl font-semibold">Interactive Demo</h2>
+            </div>
+
+            <!-- Business Selector -->
+            <div class="mb-8 p-6 rounded-lg" style="background: #f7f6f3;">
+                <label class="block text-sm font-medium mb-3">Select a business to see their SEO transformation:</label>
+                <select id="businessSelector" class="w-full px-4 py-2 rounded border text-sm" style="border-color: #e9e9e7; background: white;">
+                    <option value="plumber">Sarah's Plumbing - Austin, TX</option>
+                    <option value="photographer">Mike's Photography - Seattle, WA</option>
+                    <option value="cleaner">Clean Co. - Denver, CO</option>
+                </select>
+            </div>
+
+            <!-- SEO Health Dashboard -->
+            <div class="mb-12">
+                <h3 class="text-lg font-semibold mb-6 flex items-center gap-2">
+                    <i data-lucide="gauge" class="w-5 h-5"></i>
+                    SEO Health Dashboard
+                </h3>
+                
+                <!-- Key Metrics Grid -->
+                <div class="grid md:grid-cols-4 gap-4 mb-8">
+                    <!-- Local Rank -->
+                    <div class="metric-card rounded-lg p-5">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-sm" style="color: #787774;">Local Rank</span>
+                            <i data-lucide="trending-up" class="w-4 h-4" style="color: #0f7b6c;"></i>
+                        </div>
+                        <div class="text-3xl font-bold mb-1" id="localRank">#3</div>
+                        <div class="text-xs flex items-center gap-1" style="color: #0f7b6c;">
+                            <span>↑ from #8</span>
+                            <span class="text-gray-400">•</span>
+                            <span>+5 ranks</span>
+                        </div>
+                    </div>
+
+                    <!-- Citations -->
+                    <div class="metric-card rounded-lg p-5">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-sm" style="color: #787774;">Citations</span>
+                            <i data-lucide="list-checks" class="w-4 h-4" style="color: #2383e2;"></i>
+                        </div>
+                        <div class="text-3xl font-bold mb-1" id="citations">24/50</div>
+                        <div class="text-xs" style="color: #787774;">
+                            +12 this month
+                        </div>
+                    </div>
+
+                    <!-- Reviews -->
+                    <div class="metric-card rounded-lg p-5">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-sm" style="color: #787774;">Reviews</span>
+                            <i data-lucide="star" class="w-4 h-4" style="color: #cb912f;"></i>
+                        </div>
+                        <div class="text-3xl font-bold mb-1" id="reviews">4.6★</div>
+                        <div class="text-xs" style="color: #787774;">
+                            23 reviews, +8 this month
+                        </div>
+                    </div>
+
+                    <!-- Impressions -->
+                    <div class="metric-card rounded-lg p-5">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-sm" style="color: #787774;">"Near Me" Impressions</span>
+                            <i data-lucide="eye" class="w-4 h-4" style="color: #9065b0;"></i>
+                        </div>
+                        <div class="text-3xl font-bold mb-1" id="impressions">1,247</div>
+                        <div class="text-xs flex items-center gap-1" style="color: #0f7b6c;">
+                            <span>↑ 34%</span>
+                            <span class="text-gray-400">•</span>
+                            <span>vs last month</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress to Top 3 -->
+                <div class="mb-8 p-6 rounded-lg border" style="border-color: #e9e9e7;">
+                    <div class="flex items-center justify-between mb-3">
+                        <div>
+                            <h4 class="font-medium mb-1">Progress to #1 Ranking</h4>
+                            <p class="text-sm" style="color: #787774;">You're 65% of the way there</p>
+                        </div>
+                        <div class="text-2xl font-bold" style="color: #2383e2;">65%</div>
+                    </div>
+                    <div class="progress-bar-bg rounded-full h-2">
+                        <div class="h-2 rounded-full transition-all duration-1000" style="width: 65%; background: #2383e2;"></div>
+                    </div>
+                    <p class="text-xs mt-2" style="color: #9b9a97;">Complete 3 high-priority actions below to reach 85%</p>
+                </div>
+            </div>
+
+            <!-- Action Items -->
+            <div class="mb-12">
+                <h3 class="text-lg font-semibold mb-6 flex items-center gap-2">
+                    <i data-lucide="zap" class="w-5 h-5" style="color: #cb912f;"></i>
+                    Recommended Actions
+                    <span class="text-sm font-normal ml-2" style="color: #787774;">Clear, measurable improvements</span>
+                </h3>
+
+                <div class="space-y-3">
+                    <!-- High Priority Action -->
+                    <div class="action-item p-5 rounded-lg cursor-pointer" style="border: 1px solid #e9e9e7;">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 rounded flex items-center justify-center" style="background: #ffe2dd;">
+                                <i data-lucide="alert-triangle" class="w-5 h-5" style="color: #d44c47;"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="tag tag-high">HIGH PRIORITY</span>
+                                    <span class="text-xs" style="color: #9b9a97;">• 5 min to complete</span>
+                                </div>
+                                <h4 class="font-medium mb-2">Claim your Yelp Business Profile</h4>
+                                <p class="text-sm mb-3" style="color: #787774;">
+                                    Your business exists on Yelp but isn't claimed. Claiming it will verify your listing and improve trust signals.
+                                </p>
+                                <div class="flex items-center gap-4 text-sm">
+                                    <div class="flex items-center gap-2 px-3 py-1 rounded" style="background: #d3f9d8; color: #0f7b6c;">
+                                        <i data-lucide="trending-up" class="w-4 h-4"></i>
+                                        <span class="font-medium">+3 rank positions</span>
+                                    </div>
+                                    <div class="flex items-center gap-2" style="color: #787774;">
+                                        <i data-lucide="users" class="w-4 h-4"></i>
+                                        <span>+15% more profile views</span>
+                                    </div>
+                                </div>
+                                <button class="btn-primary px-4 py-2 rounded mt-4 text-sm font-medium">
+                                    Claim Yelp Profile →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Medium Priority Action -->
+                    <div class="action-item p-5 rounded-lg cursor-pointer" style="border: 1px solid #e9e9e7;">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 rounded flex items-center justify-center" style="background: #fdedc8;">
+                                <i data-lucide="map" class="w-5 h-5" style="color: #cb912f;"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="tag tag-medium">MEDIUM PRIORITY</span>
+                                    <span class="text-xs" style="color: #9b9a97;">• 2 min to complete</span>
+                                </div>
+                                <h4 class="font-medium mb-2">Add 5 neighborhood location pages</h4>
+                                <p class="text-sm mb-3" style="color: #787774;">
+                                    We'll auto-generate pages for Round Rock, Cedar Park, Pflugerville, Georgetown, and Leander. Each page targets local searches.
+                                </p>
+                                <div class="flex items-center gap-4 text-sm">
+                                    <div class="flex items-center gap-2 px-3 py-1 rounded" style="background: #d3f9d8; color: #0f7b6c;">
+                                        <i data-lucide="trending-up" class="w-4 h-4"></i>
+                                        <span class="font-medium">+2 rank positions</span>
+                                    </div>
+                                    <div class="flex items-center gap-2" style="color: #787774;">
+                                        <i data-lucide="bar-chart-2" class="w-4 h-4"></i>
+                                        <span>+40% local traffic</span>
+                                    </div>
+                                </div>
+                                <button class="btn-primary px-4 py-2 rounded mt-4 text-sm font-medium">
+                                    Generate Location Pages →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Low Priority Action -->
+                    <div class="action-item p-5 rounded-lg cursor-pointer" style="border: 1px solid #e9e9e7;">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 rounded flex items-center justify-center" style="background: #d3e5ef;">
+                                <i data-lucide="star" class="w-5 h-5" style="color: #3e7cb1;"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="tag tag-low">QUICK WIN</span>
+                                    <span class="text-xs" style="color: #9b9a97;">• 30 sec to complete</span>
+                                </div>
+                                <h4 class="font-medium mb-2">Request reviews from 5 recent customers</h4>
+                                <p class="text-sm mb-3" style="color: #787774;">
+                                    We identified 5 customers from last month who haven't been asked for reviews. We'll send automated, personalized requests.
+                                </p>
+                                <div class="flex items-center gap-4 text-sm">
+                                    <div class="flex items-center gap-2 px-3 py-1 rounded" style="background: #d3f9d8; color: #0f7b6c;">
+                                        <i data-lucide="star" class="w-4 h-4"></i>
+                                        <span class="font-medium">+3-5 reviews expected</span>
+                                    </div>
+                                    <div class="flex items-center gap-2" style="color: #787774;">
+                                        <i data-lucide="trending-up" class="w-4 h-4"></i>
+                                        <span>+1 rank position</span>
+                                    </div>
+                                </div>
+                                <button class="btn-primary px-4 py-2 rounded mt-4 text-sm font-medium">
+                                    Send Review Requests →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Summary Box -->
+                <div class="mt-6 p-5 rounded-lg" style="background: #f7f6f3; border-left: 3px solid #2383e2;">
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="lightbulb" class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: #cb912f;"></i>
+                        <div class="text-sm">
+                            <p class="font-medium mb-1">Impact Summary</p>
+                            <p style="color: #787774;">
+                                Complete all 3 actions above to move from <strong>rank #3 → #1</strong> and increase monthly impressions by <strong>~85%</strong> (projected +1,060 impressions/month). Estimated time: 10 minutes total.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location Pages Preview -->
+            <div class="mb-12">
+                <h3 class="text-lg font-semibold mb-6 flex items-center gap-2">
+                    <i data-lucide="map-pin" class="w-5 h-5" style="color: #9065b0;"></i>
+                    Auto-Generated Location Pages
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-4 mb-6">
+                    <div class="p-5 rounded-lg border" style="border-color: #e9e9e7;">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="font-medium">Round Rock, TX</h4>
+                            <span class="tag">Live</span>
+                        </div>
+                        <p class="text-sm mb-3" style="color: #787774;">
+                            /round-rock-plumber
+                        </p>
+                        <div class="text-xs space-y-1" style="color: #9b9a97;">
+                            <div>• Ranking: #5 for "plumber Round Rock"</div>
+                            <div>• Impressions: 234/month</div>
+                            <div>• Clicks: 18/month (7.7% CTR)</div>
+                        </div>
+                    </div>
+
+                    <div class="p-5 rounded-lg border" style="border-color: #e9e9e7;">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="font-medium">Cedar Park, TX</h4>
+                            <span class="tag">Live</span>
+                        </div>
+                        <p class="text-sm mb-3" style="color: #787774;">
+                            /cedar-park-plumber
+                        </p>
+                        <div class="text-xs space-y-1" style="color: #9b9a97;">
+                            <div>• Ranking: #7 for "plumber Cedar Park"</div>
+                            <div>• Impressions: 189/month</div>
+                            <div>• Clicks: 12/month (6.3% CTR)</div>
+                        </div>
+                    </div>
+
+                    <div class="p-5 rounded-lg border border-dashed" style="border-color: #d3d1cb; background: #f7f6f3;">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="font-medium" style="color: #787774;">Pflugerville, TX</h4>
+                            <span class="tag">Suggested</span>
+                        </div>
+                        <p class="text-sm mb-3" style="color: #787774;">
+                            Click to generate in 30 seconds
+                        </p>
+                        <div class="text-xs" style="color: #9b9a97;">
+                            • Est. 210 monthly impressions
+                        </div>
+                    </div>
+
+                    <div class="p-5 rounded-lg border border-dashed" style="border-color: #d3d1cb; background: #f7f6f3;">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="font-medium" style="color: #787774;">Georgetown, TX</h4>
+                            <span class="tag">Suggested</span>
+                        </div>
+                        <p class="text-sm mb-3" style="color: #787774;">
+                            Click to generate in 30 seconds
+                        </p>
+                        <div class="text-xs" style="color: #9b9a97;">
+                            • Est. 178 monthly impressions
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-secondary px-4 py-2 rounded text-sm font-medium">
+                    <span class="flex items-center gap-2">
+                        <i data-lucide="plus" class="w-4 h-4"></i>
+                        Generate 3 More Pages
+                    </span>
+                </button>
+            </div>
+
+            <!-- Citations Progress -->
+            <div class="mb-12">
+                <h3 class="text-lg font-semibold mb-6 flex items-center gap-2">
+                    <i data-lucide="list-checks" class="w-5 h-5" style="color: #0f7b6c;"></i>
+                    Citation Building Progress
+                </h3>
+
+                <div class="mb-6">
+                    <div class="flex items-center justify-between mb-2 text-sm">
+                        <span style="color: #787774;">24 of 50 directories completed</span>
+                        <span class="font-medium">48%</span>
+                    </div>
+                    <div class="progress-bar-bg rounded-full h-2">
+                        <div class="h-2 rounded-full" style="width: 48%; background: #0f7b6c;"></div>
+                    </div>
+                </div>
+
+                <div class="space-y-2 text-sm">
+                    <div class="flex items-center justify-between p-3 rounded" style="background: #f7f6f3;">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check-circle-2" class="w-4 h-4" style="color: #0f7b6c;"></i>
+                            <span>Google Business Profile</span>
+                        </div>
+                        <span class="tag">Verified</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 rounded" style="background: #f7f6f3;">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check-circle-2" class="w-4 h-4" style="color: #0f7b6c;"></i>
+                            <span>Yelp</span>
+                        </div>
+                        <span class="tag">Claimed</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 rounded" style="background: #f7f6f3;">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="clock" class="w-4 h-4" style="color: #cb912f;"></i>
+                            <span>Better Business Bureau</span>
+                        </div>
+                        <span class="tag">Pending</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 rounded" style="background: #f7f6f3;">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="circle" class="w-4 h-4" style="color: #d3d1cb;"></i>
+                            <span>Angi (Angie's List)</span>
+                        </div>
+                        <span class="tag">Not Started</span>
+                    </div>
+                </div>
+
+                <button class="btn-primary px-4 py-2 rounded mt-4 text-sm font-medium">
+                    Auto-Submit to 26 Remaining Directories
+                </button>
+            </div>
+        </section>
+
+        <div class="notion-divider"></div>
+
+        <!-- Business Impact -->
+        <section class="mb-16">
+            <div class="flex items-center gap-2 mb-6">
+                <i data-lucide="trending-up" class="w-5 h-5" style="color: #0f7b6c;"></i>
+                <h2 class="text-2xl font-semibold">Expected Business Impact</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="p-6 rounded-lg border" style="border-color: #e9e9e7;">
+                    <div class="text-4xl font-bold mb-2" style="color: #0f7b6c;">300%</div>
+                    <div class="text-sm font-medium mb-1">Increase in Local Visibility</div>
+                    <p class="text-xs" style="color: #787774;">Average across all businesses using Durable Local</p>
+                </div>
+                <div class="p-6 rounded-lg border" style="border-color: #e9e9e7;">
+                    <div class="text-4xl font-bold mb-2" style="color: #0f7b6c;">70%</div>
+                    <div class="text-sm font-medium mb-1">Rank Top 3 in 90 Days</div>
+                    <p class="text-xs" style="color: #787774;">For primary local keyword in their city</p>
+                </div>
+                <div class="p-6 rounded-lg border" style="border-color: #e9e9e7;">
+                    <div class="text-4xl font-bold mb-2" style="color: #0f7b6c;">40%</div>
+                    <div class="text-sm font-medium mb-1">More Customer Reviews</div>
+                    <p class="text-xs" style="color: #787774;">Through automated review request system</p>
+                </div>
+            </div>
+
+            <!-- 90-Day Timeline -->
+            <div class="p-6 rounded-lg" style="background: #f7f6f3;">
+                <h3 class="font-semibold mb-4">90-Day SEO Transformation Timeline</h3>
+                <div class="space-y-4">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-16 text-sm font-medium" style="color: #787774;">Week 1-2</div>
+                        <div class="flex-1">
+                            <div class="font-medium mb-1">Foundation Setup</div>
+                            <p class="text-sm" style="color: #787774;">Citations submitted, location pages live, schema markup added. Rank: #15 → #12</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-16 text-sm font-medium" style="color: #787774;">Week 3-8</div>
+                        <div class="flex-1">
+                            <div class="font-medium mb-1">Momentum Building</div>
+                            <p class="text-sm" style="color: #787774;">Citations go live, reviews accumulate, traffic increases. Rank: #12 → #5</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-16 text-sm font-medium" style="color: #787774;">Week 9-12</div>
+                        <div class="flex-1">
+                            <div class="font-medium mb-1">Top Rankings Achieved</div>
+                            <p class="text-sm" style="color: #787774;">Consistent top 3 positions, steady customer flow. Rank: #5 → #3, sometimes #1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="notion-divider"></div>
+
+        <!-- ROI Comparison -->
+        <section class="mb-16">
+            <div class="flex items-center gap-2 mb-6">
+                <i data-lucide="dollar-sign" class="w-5 h-5" style="color: #2383e2;"></i>
+                <h2 class="text-2xl font-semibold">ROI vs Alternatives</h2>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr style="border-bottom: 1px solid #e9e9e7;">
+                            <th class="text-left py-3 font-medium" style="color: #787774;"></th>
+                            <th class="text-left py-3 font-medium">Durable Local</th>
+                            <th class="text-left py-3 font-medium">SEO Agency</th>
+                            <th class="text-left py-3 font-medium">DIY Manual</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #e9e9e7;">
+                            <td class="py-3" style="color: #787774;">Monthly Cost</td>
+                            <td class="py-3 font-medium" style="color: #0f7b6c;">$20</td>
+                            <td class="py-3">$500-2,000</td>
+                            <td class="py-3">$0 (time cost)</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e9e9e7;">
+                            <td class="py-3" style="color: #787774;">Setup Time</td>
+                            <td class="py-3 font-medium" style="color: #0f7b6c;">5 minutes</td>
+                            <td class="py-3">2-4 weeks</td>
+                            <td class="py-3">40+ hours</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e9e9e7;">
+                            <td class="py-3" style="color: #787774;">SEO Knowledge Required</td>
+                            <td class="py-3 font-medium" style="color: #0f7b6c;">None</td>
+                            <td class="py-3">None</td>
+                            <td class="py-3">Expert</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e9e9e7;">
+                            <td class="py-3" style="color: #787774;">Time to Results</td>
+                            <td class="py-3 font-medium" style="color: #0f7b6c;">30-90 days</td>
+                            <td class="py-3">60-180 days</td>
+                            <td class="py-3">90-180 days</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3" style="color: #787774;">Annual Savings vs Agency</td>
+                            <td class="py-3 font-medium" style="color: #0f7b6c;">$5,760</td>
+                            <td class="py-3">—</td>
+                            <td class="py-3">$6,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="notion-divider"></div>
+
+        <!-- About This Prototype -->
+        <section>
+            <div class="flex items-center gap-2 mb-6">
+                <i data-lucide="info" class="w-5 h-5" style="color: #9b9a97;"></i>
+                <h2 class="text-2xl font-semibold">About This Prototype</h2>
+            </div>
+
+            <div class="space-y-4 text-sm" style="color: #787774;">
+                <p>
+                    This interactive demo was created by <strong>Rachel Ramkhelawan</strong> as part of my application for the Product Manager role at Durable. 
+                </p>
+                <p>
+                    The prototype addresses a real user pain point identified in reviews: <em>"Limited SEO capabilities"</em>. Local SEO is critical for service businesses but requires specialized knowledge most small business owners don't have.
+                </p>
+                <p>
+                    <strong>Key Innovation:</strong> Instead of teaching users SEO, Durable Local automates the entire process. Users get actionable recommendations with clear impact metrics ("+3 ranks", "+40% traffic"), making SEO accessible without expertise.
+                </p>
+                <div class="flex gap-3 mt-6">
+                    <a href="https://github.com/your-username/durable-local-seo" class="btn-secondary px-4 py-2 rounded text-sm font-medium flex items-center gap-2">
+                        <i data-lucide="github" class="w-4 h-4"></i>
+                        View on GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/rachel-ramkhelawan" class="btn-secondary px-4 py-2 rounded text-sm font-medium flex items-center gap-2">
+                        <i data-lucide="linkedin" class="w-4 h-4"></i>
+                        Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t mt-16" style="border-color: #e9e9e7;">
+        <div class="max-w-5xl mx-auto px-8 py-8 text-center text-sm" style="color: #9b9a97;">
+            <p>Prototype concept by Rachel Ramkhelawan • Not affiliated with or endorsed by Durable</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Business data
+        const businesses = {
+            plumber: {
+                name: "Sarah's Plumbing",
+                location: "Austin, TX",
+                localRank: "#3",
+                citations: "24/50",
+                reviews: "4.6★",
+                impressions: "1,247"
+            },
+            photographer: {
+                name: "Mike's Photography",
+                location: "Seattle, WA",
+                localRank: "#5",
+                citations: "18/50",
+                reviews: "4.8★",
+                impressions: "892"
+            },
+            cleaner: {
+                name: "Clean Co.",
+                location: "Denver, CO",
+                localRank: "#2",
+                citations: "31/50",
+                reviews: "4.9★",
+                impressions: "1,534"
+            }
+        };
+
+        // Handle business selector change
+        document.getElementById('businessSelector').addEventListener('change', function(e) {
+            const business = businesses[e.target.value];
+            document.getElementById('localRank').textContent = business.localRank;
+            document.getElementById('citations').textContent = business.citations;
+            document.getElementById('reviews').textContent = business.reviews;
+            document.getElementById('impressions').textContent = business.impressions;
+        });
+    </script>
+
+</body>
+</html>

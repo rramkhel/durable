@@ -17,7 +17,7 @@ const InterviewPresentation = () => {
             </div>
           </div>
           <h1 className="text-5xl font-bold text-gray-900 mb-4">Three AI Features for Durable</h1>
-          <p className="text-2xl text-gray-600 mb-8">Protect Revenue. Drive Growth. Scale Success.</p>
+          <p className="text-2xl text-gray-600 mb-8"></p>
           <div className="grid grid-cols-3 gap-6 max-w-4xl mx-auto">
             <div className="bg-gradient-to-br from-purple-50 to-blue-50 p-6 rounded-xl">
               <Zap className="w-12 h-12 text-purple-600 mx-auto mb-3" />
@@ -928,8 +928,8 @@ const InterviewPresentation = () => {
       <div className="bg-white border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <div>
-            <h1 className="text-lg font-bold text-gray-900">Durable PM Interview Presentation</h1>
-            <p className="text-sm text-gray-600">Three AI Features Strategy</p>
+            <h1 className="text-lg font-bold text-gray-900">Durable Product Strategy Overview</h1>
+            <p className="text-sm text-gray-600">Three AI Features Study</p>
           </div>
           <div className="text-sm text-gray-600">
             Slide {currentSlide + 1} of {slides.length}

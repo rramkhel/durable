@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Design Challenge: Local SEO for Durable</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        body {
+            background: #ffffff;
+            color: #37352f;
+            line-height: 1.6;
+        }
+        
+        .notion-divider {
+            height: 1px;
+            background: #e9e9e7;
+            margin: 2rem 0;
+        }
+        
+        .metric-card {
+            border: 1px solid #e9e9e7;
+            transition: all 0.2s ease;
+        }
+        
+        .metric-card:hover {
+            border-color: #d3d1cb;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+        
+        .action-item {
+            border-left: 2px solid transparent;
+            transition: all 0.15s ease;
+        }
+        
+        .action-item:hover {
+            border-left-color: #2383e2;
+            background: #f7f6f3;
+        }
+        
+        .progress-bar-bg {
+            background: #f1f0ee;
+        }
+        
+        .btn-primary {
+            background: #2383e2;
+            color: white;
+            border: none;
+            transition: all 0.15s ease;
+        }
+        
+        .btn-primary:hover {
+            background: #1a6ec7;
+        }
+        
+        .btn-secondary {
+            background: white;
+            border: 1px solid #e9e9e7;
+            transition: all 0.15s ease;
+        }
+        
+        .btn-secondary:hover {
+            background: #f7f6f3;
+        }
+        
+        .tag {
+            background: #f1f0ee;
+            color: #787774;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+        
+        .tag-high { background: #ffe2dd; color: #d44c47; }
+        .tag-medium { background: #fdedc8; color: #cb912f; }
+        .tag-low { background: #d3e5ef; color: #3e7cb1; }
+        
+        .challenge-box {
+            background: #f7f6f3;
+            border-left: 3px solid #2383e2;
+        }
+        
+        .nav-link {
+            color: #787774;
+            transition: color 0.15s ease;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            color: #37352f;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="border-b sticky top-0 bg-white z-50" style="border-color: #e9e9e7;">
+        <div class="max-w-5xl mx-auto px-8 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded flex items-center justify-center" style="background: #f7f6f3;">
+                        <i data-lucide="briefcase" class="w-5 h-5" style="color: #2383e2;"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs" style="color: #787774;">Product Design Challenge</div>
+                        <div class="font-semibold">Rachel Ramkhelawan</div>
+                    </div>
+                </div>
+                <div class="flex gap-6 text-sm">
+                    <a href="#problem" class="nav-link">Problem</a>
+                    <a href="#research" class="nav-link">Research</a>
+                    <a href="#solution" class="nav-link">Solution</a>
+                    <a href="#impact" class="nav-link">Impact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-8 py-12">
+        
+        <!-- Challenge Brief -->
+        <section class="mb-16" id="problem">
+            <div class="challenge-box p-8 rounded-lg mb-8">
+                <div class="flex items-start gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center" style="background: #2383e2;">
+                        <i data-lucide="file-text" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h2 class="text-xl font-semibold mb-3">Design Challenge</h2>
+                        <div class="space-y-2 text-sm" style="color: #787774;">
+                            <p><strong>Company:</strong> Durable (AI-powered website builder for small businesses)</p>
+                            <p><strong>Role:</strong> Senior Product Manager</p>
+                            <p><strong>Timeline:</strong> 1 week design sprint</p>
+                            <p><strong>Deliverable:</strong> Interactive prototype with product strategy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="text-4xl font-bold mb-6">Local SEO Automation for Service Businesses</h1>
+            
+            <div class="mb-8">
+                <h3 class="text-sm font-semibold mb-3" style="color: #787774;">THE BRIEF</h3>
+                <div class="space-y-4">
+                    <p>
+                        Durable has created 6M+ websites in 30 seconds using AI. However, user reviews indicate a critical gap: <strong>"Limited SEO capabilities."</strong> Service businesses are creating beautiful websites but remaining invisible in local search results.
+                    </p>
+                    <p class="font-medium">
+                        <strong>Your challenge:</strong> Design a solution that automatically optimizes Durable websites for local search without requiring users to understand SEO.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Constraints -->
+            <div class="grid md:grid-cols-3 gap-4 mb-8">
+                <div class="p-4 rounded-lg border" style="border-color: #e9e9e7;">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i data-lucide="users" class="w-4 h-4" style="color: #787774;"></i>
+                        <span class="text-sm font-medium">Target Users</span>
+                    </div>
+                    <p class="text-sm" style="color: #787774;">Service business owners (plumbers, photographers, cleaners) with zero SEO knowledge</p>
+                </div>
+                <div class="p-4 rounded-lg border" style="border-color: #e9e9e7;">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i data-lucide="target" class="w-4 h-4" style="color: #787774;"></i>
+                        <span class="text-sm font-medium">Success Metric</span>
+                    </div>
+                    <p class="text-sm" style="color: #787774;">70% of users rank top 3 for local keyword within 90 days</p>
+                </div>
+                <div class="p-4 rounded-lg border" style="border-color: #e9e9e7;">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i data-lucide="zap" class="w-4 h-4" style="color: #787774;"></i>
+                        <span class="text-sm font-medium">Key Principle</span>
+                    </div>
+                    <p class="text-sm" style="color: #787774;">Zero manual work - AI does everything automatically</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="notion-divider"></div>
+
+        <!-- Research & Problem Definition -->
+        <section class="mb-16" id="research">
+            <h2 class="text-3xl font-bold mb-8">01 — Research & Problem Definition</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold mb-4">User Pain Points</h3>
+                <div class="space-y-3">
+                    <div class="p-4 rounded-lg" style="background: #f7f6f3;">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="quote" class="w-5 h-5 flex-shrink-0 mt-1" style="color: #787774;"></i>
+                            <div>
+                                <p class="text-sm mb-1 italic">"I built a beautiful website but no one can find me. When I Google 'plumber Austin' I'm on page 7."</p>
+                                <p class="text-xs" style="color: #9b9a97;">— Sarah, Plumber in Austin (Durable user, churned after 3 months)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 rounded-lg" style="background: #f7f6f3;">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="quote" class="w-5 h-5 flex-shrink-0 mt-1" style="color: #787774;"></i>
+                            <div>
+                                <p class="text-sm mb-1 italic">"I don't know what citations or schema markup are. I just want customers to call me."</p>
+                                <p class="text-xs" style="color: #9b9a97;">— Mike, Photographer in Seattle</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold mb-4">Market Data</h3>
+                <div class="grid md:grid-cols-4 gap-4">
+                    <div class="p-5 rounded-lg border" style="border-color: #e9e9e7;">
+                        <div class="text-3xl font-bold mb-2" style="color: #d44c47;">51%</div>
+                        <p class="text-xs" style="color: #787774;">Of plumbers have websites (49% invisible)</p>
+                    </div>
+                    <div class="p-5 rounded-lg border" style="border-color: #e9e9e7;">
+                        <div class="text-3xl font-bold mb-2" style="color: #d44c47;">250%</div>
+                        <p class="text-xs" style="color: #787774;">Growth in "service near me" searches (Google)</p>
+                    </div>
+                    <div class="p-5 rounded-lg border" style="border-color: #e9e9e7;">
+                        <div class="text-3xl font-bold mb-2" style="color: #d44c47;">40%</div>
+                        <p class="text-xs" style="color: #787774;">Estimated churn rate due to "not getting customers"</p>
+                    </div>
+                    <div class="p-5 rounded-lg border" style="border-color: #e9e9e7;">
+                        <div class="text-3xl font-bold mb-2" style="color: #0f7b6c;">$500-2k</div>
+                        <p class="text-xs" style="color: #787774;">Monthly cost of SEO agency (vs $20 for our solution)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold mb-4">Core Problem Statement</h3>
+                <div class="p-6 rounded-lg border-l-4" style="background: #f7f6f3; border-color: #d44c47;">
+                    <p class="text-lg">
+                        <strong>Service business owners create Durable websites in 30 seconds but remain invisible in local search,</strong> leading to zero customers and high churn. They lack SEO knowledge and can't afford agencies, creating a critical gap between website creation and business success.
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Design Principles</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="flex gap-3">
+                        <div class="flex-shrink-0 w-8 h-8 rounded flex items-center justify-center" style="background: #d3e5ef;">
+                            <i data-lucide="wand-2" class="w-4 h-4" style="color: #3e7cb1;"></i>
+                        </div>
+                        <div>
+                            <div class="font-medium mb-1">Invisible Automation</div>
+                            <p class="text-sm" style="color: #787774;">SEO happens automatically. Users don't learn SEO, they just see results.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="flex-shrink-0 w-8 h-8 rounded flex items-center justify-center" style="background: #d3e5ef;">
+                            <i data-lucide="bar-chart-2" class="w-4 h-4" style="color: #3e7cb1;"></i>
+                        </div>
+                        <div>
+                            <div class="font-medium mb-1">Measurable Impact</div>
+                            <p class="text-sm" style="color: #787774;">Every action shows clear improvement: "+3 ranks", "+40% traffic"</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="flex-shrink-0 w-8 h-8 rounded flex items-center justify-center" style="background: #d3e5ef;">
+                            <i data-lucide="clock" class="w-4 h-4" style="color: #3e7cb1;"></i>
+                        </div>
+                        <div>
+                            <div class="font-medium mb-1">One-Click Actions</div>
+                            <p class="text-sm" style="color: #787774;">Complex SEO tasks (citations, schema) done in 1 click, max 5 min setup</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="flex-shrink-0 w-8 h-8 rounded flex items-center justify-center" style="background: #d3e5ef;">
+                            <i data-lucide="target" class="w-4 h-4" style="color: #3e7cb1;"></i>
+                        </div>
+                        <div>
+                            <div class="font-medium mb-1">Progressive Disclosure</div>
+                            <p class="text-sm" style="color: #787774;">Show only what's needed now. Top 3 actions, not overwhelming checklist.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="notion-divider"></div>
+
+        <!-- Solution -->
+        <section class="mb-16" id="solution">
+            <h2 class="text-3xl font-bold mb-8">02 — Solution: Durable Local</h2>
+            
+            <div class="mb-8">
+                <p class="text-lg mb-4">
+                    An automated local SEO engine that handles citations, location pages, schema markup, and review automation—transforming invisible websites into top-ranked local businesses without requiring SEO expertise.
+                </p>
+                <div class="flex gap-3">
+                    <span class="tag">AI-Powered</span>
+                    <span class="tag">Zero Configuration</span>
+                    <span class="tag">Measurable Results</span>
+                </div>
+            </div>
+
+            <!-- Key Features -->
+            <div class="mb-12">
+                <h3 class="text-lg font-semibold mb-6">Core Features</h3>
+                <div class="space-y-4">
+                    <div class="flex gap-4 p-5 rounded-lg border" style="border-color: #e9e9e7;">
+                        <div class="flex-shrink-0 w-10 h-10 rounded flex items-center justify-center" style="background: #d3e5ef;">
+                            <i data-lucide="activity" class="w-5 h-5" style="color: #3e7cb1;"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-medium mb-2">SEO Health Dashboard</h4>
+                            <p class="text-sm mb-3" style="color: #787774;">
+                                At-a-glance view of local search performance with 4 key metrics: rank position, citation completion, review score, and "near me" impressions. Shows progress toward #1 ranking.
+                            </p>
+                            <div class="text-xs" style="color: #9b9a97;">Impact: Users understand their position and path to improvement in 5 seconds</div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 p-5 rounded-lg border" style="border-color: #e9e9e7;">
+                        <div class="flex-shrink-0 w-10 h-10 rounded flex items-center justify-center" style="background: #d3e5ef;">
+                            <i data-lucide="zap" class="w-5 h-5" style="color: #3e7cb1;"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-medium mb-2">Priority Action Queue</h4>
+                            <p class="text-sm mb-3" style="color: #787774;">
+                                AI identifies top 3 actions ranked by impact (high/medium/low priority). Each shows exact improvement: "+3 ranks", "+40% traffic", "5 min to complete". One-click execution for everything.
+                            </p>
+                            <div class="text-xs" style="color: #9b9a97;">Impact: Removes decision paralysis, shows clear ROI for each action</div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 p-5 rounded-lg border" style="border-color: #e9e9e7;">
+                        <div class="flex-shrink-0 w-10 h-10 rounded flex items-center justify-center" style="background: #d3e5ef;">
+                            <i data-lucide="map-pin" class="w-5 h-5" style="color: #3e7cb1;"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-medium mb-2">Auto-Generated Location Pages</h4>
+                            <p class="text-sm mb-3" style="color: #787774;">
+                                AI creates separate pages for each city/neighborhood served. Includes local stats, embedded maps, schema markup, and optimized content. Generated in 30 seconds per page.
+                            </p>
+                            <div class="text-xs" style="color: #9b9a97;">Impact: +300% local search visibility, ranks for "service + neighborhood" searches</div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 p-5 rounded-lg border" style="border-color: #e9e9e7;">
+                        <div class="flex-shrink-0 w-10 h-10 rounded flex items-center justify-center" style="background: #d3e5ef;">
+                            <i data-lucide="list-checks" class="w-5 h-5" style="color: #3e7cb1;"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-medium mb-2">Citation Building Automation</h4>
+                            <p class="text-sm mb-3" style="color: #787774;">
+                                One-click submission to 50+ local directories (Google, Yelp, BBB, Angi, etc.). Auto-tracks completion status and handles verification. Manual process takes 40+ hours; automated takes 1 click.
+                            </p>
+                            <div class="text-xs" style="color: #9b9a97;">Impact: 5x more citations, saves 40 hours, improves local search trust signals</div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 p-5 rounded-lg border" style="border-color: #e9e9e7;">
+                        <div class="flex-shrink-0 w-10 h-10 rounded flex items-center justify-center" style="background: #d3e5ef;">
+                            <i data-lucide="star" class="w-5 h-5" style="color: #3e7cb1;"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-medium mb-2">Review Request Automation</h4>
+                            <p class="text-sm mb-3" style="color: #787774;">
+                                Automatically sends review requests 24 hours after job completion. One-click review links for Google/Yelp. Gentle reminder after 7 days if no review. Optional 10% discount incentive.
+                            </p>
+                            <div class="text-xs" style="color: #9b9a97;">Impact: 40% more reviews, systematic 5-star accumulation</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Prototype -->
+            <div class="mb-12">
+                <h3 class="text-lg font-semibold mb-6">Interactive Prototype</h3>
+                
+                <!-- Business Selector -->
+                <div class="mb-6 p-4 rounded-lg" style="background: #f7f6f3;">
+                    <label class="block text-sm font-medium mb-2">Select a demo business:</label>
+                    <select id="businessSelector" class="w-full px-4 py-2 rounded border text-sm" style="border-color: #e9e9e7; background: white;">
+                        <option value="plumber">Sarah's Plumbing - Austin, TX</option>
+                        <option value="photographer">Mike's Photography - Seattle, WA</option>
+                        <option value="cleaner">Clean Co. - Denver, CO</option>
+                    </select>
+                </div>
+
+                <!-- Dashboard -->
+                <div class="border rounded-lg p-6 mb-6" style="border-color: #e9e9e7;">
+                    <h4 class="font-medium mb-4 flex items-center gap-2">
+                        <i data-lucide="gauge" class="w-5 h-5"></i>
+                        SEO Health Dashboard
+                    </h4>
+                    
+                    <!-- Key Metrics Grid -->
+                    <div class="grid md:grid-cols-4 gap-4 mb-6">
+                        <div class="metric-card rounded-lg p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs" style="color: #787774;">Local Rank</span>
+                                <i data-lucide="trending-up" class="w-4 h-4" style="color: #0f7b6c;"></i>
+                            </div>
+                            <div class="text-2xl font-bold mb-1" id="localRank">#3</div>
+                            <div class="text-xs" style="color: #0f7b6c;">↑ from #8 (+5)</div>
+                        </div>
+
+                        <div class="metric-card rounded-lg p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs" style="color: #787774;">Citations</span>
+                                <i data-lucide="list-checks" class="w-4 h-4" style="color: #2383e2;"></i>
+                            </div>
+                            <div class="text-2xl font-bold mb-1" id="citations">24/50</div>
+                            <div class="text-xs" style="color: #787774;">+12 this month</div>
+                        </div>
+
+                        <div class="metric-card rounded-lg p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs" style="color: #787774;">Reviews</span>
+                                <i data-lucide="star" class="w-4 h-4" style="color: #cb912f;"></i>
+                            </div>
+                            <div class="text-2xl font-bold mb-1" id="reviews">4.6★</div>
+                            <div class="text-xs" style="color: #787774;">23 reviews</div>
+                        </div>
+
+                        <div class="metric-card rounded-lg p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs" style="color: #787774;">Impressions</span>
+                                <i data-lucide="eye" class="w-4 h-4" style="color: #9065b0;"></i>
+                            </div>
+                            <div class="text-2xl font-bold mb-1" id="impressions">1,247</div>
+                            <div class="text-xs" style="color: #0f7b6c;">↑ 34%</div>
+                        </div>
+                    </div>
+
+                    <!-- Progress Bar -->
+                    <div class="p-4 rounded-lg" style="background: #f7f6f3;">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-sm font-medium">Progress to #1</span>
+                            <span class="text-sm font-bold" style="color: #2383e2;">65%</span>
+                        </div>
+                        <div class="progress-bar-bg rounded-full h-2">
+                            <div class="h-2 rounded-full" style="width: 65%; background: #2383e2;"></div>
+                        </div>
+                        <p class="text-xs mt-2" style="color: #9b9a97;">Complete 3 actions below to reach 85%</p>
+                    </div>
+                </div>
+
+                <!-- Top 3 Actions -->
+                <div class="border rounded-lg p-6" style="border-color: #e9e9e7;">
+                    <h4 class="font-medium mb-4 flex items-center gap-2">
+                        <i data-lucide="zap" class="w-5 h-5" style="color: #cb912f;"></i>
+                        Top 3 Priority Actions
+                    </h4>
+
+                    <div class="space-y-3">
+                        <!-- Action 1 -->
+                        <div class="action-item p-4 rounded border" style="border-color: #e9e9e7;">
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 w-8 h-8 rounded flex items-center justify-center" style="background: #ffe2dd;">
+                                    <span class="text-xs font-bold" style="color: #d44c47;">1</span>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <span class="tag tag-high">HIGH PRIORITY</span>
+                                        <span class="text-xs" style="color: #9b9a97;">• 5 min</span>
+                                    </div>
+                                    <h5 class="font-medium mb-1 text-sm">Claim your Yelp Business Profile</h5>
+                                    <div class="flex items-center gap-3 text-xs mb-2">
+                                        <span class="px-2 py-1 rounded font-medium" style="background: #d3f9d8; color: #0f7b6c;">+3 ranks</span>
+                                        <span style="color: #787774;">+15% profile views</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action 2 -->
+                        <div class="action-item p-4 rounded border" style="border-color: #e9e9e7;">
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 w-8 h-8 rounded flex items-center justify-center" style="background: #fdedc8;">
+                                    <span class="text-xs font-bold" style="color: #cb912f;">2</span>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <span class="tag tag-medium">MEDIUM</span>
+                                        <span class="text-xs" style="color: #9b9a97;">• 2 min</span>
+                                    </div>
+                                    <h5 class="font-medium mb-1 text-sm">Add 5 neighborhood pages</h5>
+                                    <div class="flex items-center gap-3 text-xs mb-2">
+                                        <span class="px-2 py-1 rounded font-medium" style="background: #d3f9d8; color: #0f7b6c;">+2 ranks</span>
+                                        <span style="color: #787774;">+40% local traffic</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action 3 -->
+                        <div class="action-item p-4 rounded border" style="border-color: #e9e9e7;">
+                            <div class="flex items-start gap-3">
+                                <div class="flex-shrink-0 w-8 h-8 rounded flex items-center justify-center" style="background: #d3e5ef;">
+                                    <span class="text-xs font-bold" style="color: #3e7cb1;">3</span>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <span class="tag tag-low">QUICK WIN</span>
+                                        <span class="text-xs" style="color: #9b9a97;">• 30 sec</span>
+                                    </div>
+                                    <h5 class="font-medium mb-1 text-sm">Request 5 customer reviews</h5>
+                                    <div class="flex items-center gap-3 text-xs mb-2">
+                                        <span class="px-2 py-1 rounded font-medium" style="background: #d3f9d8; color: #0f7b6c;">+3-5 reviews</span>
+                                        <span style="color: #787774;">+1 rank</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Impact Summary -->
+                    <div class="mt-4 p-3 rounded text-xs" style="background: #f7f6f3;">
+                        <strong>Combined Impact:</strong> Complete all 3 actions (10 min total) to move from #3 → #1 and increase impressions by ~85% (+1,060/month)
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="notion-divider"></div>
+
+        <!-- Impact & Results -->
+        <section class="mb-16" id="impact">
+            <h2 class="text-3xl font-bold mb-8">03 — Expected Impact</h2>
+
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold mb-4">Success Metrics</h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="p-5 rounded-lg border" style="border-color: #e9e9e7;">
+                        <div class="text-4xl font-bold mb-2" style="color: #0f7b6c;">70%</div>
+                        <p class="text-sm font-medium mb-1">Rank Top 3 in 90 Days</p>
+                        <p class="text-xs" style="color: #787774;">For primary local keyword in their city</p>
+                    </div>
+                    <div class="p-5 rounded-lg border" style="border-color: #e9e9e7;">
+                        <div class="text-4xl font-bold mb-2" style="color: #0f7b6c;">300%</div>
+                        <p class="text-sm font-medium mb-1">Increase in Visibility</p>
+                        <p class="text-xs" style="color: #787774;">Average "near me" impressions growth</p>
+                    </div>
+                    <div class="p-5 rounded-lg border" style="border-color: #e9e9e7;">
+                        <div class="text-4xl font-bold mb-2" style="color: #0f7b6c;">25%</div>
+                        <p class="text-sm font-medium mb-1">Churn Reduction</p>
+                        <p class="text-xs" style="color: #787774;">From 40% → 25% (saves 900K users)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold mb-4">Business Impact for Durable</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-medium mb-3 text-sm">Revenue Opportunity</h4>
+                        <ul class="space-y-2 text-sm" style="color: #787774;">
+                            <li>• <strong>+$10-30/month ARPU</strong> from SEO tier upgrade</li>
+                            <li>• <strong>500K users × $20 = $10M new ARR</strong></li>
+                            <li>• <strong>900K users saved from churn = $162M</strong> retained revenue</li>
+                            <li>• Total potential: <strong>$172M+ impact</strong></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium mb-3 text-sm">User Success Story</h4>
+                        <div class="space-y-3 text-sm">
+                            <div class="flex gap-3">
+                                <span class="flex-shrink-0 font-medium" style="color: #d44c47;">Before:</span>
+                                <span style="color: #787774;">Website on page 7, 0 customers, churns after 3 months</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <span class="flex-shrink-0 font-medium" style="color: #0f7b6c;">After:</span>
+                                <span style="color: #787774;">Rank #3 in 90 days, 10-15 calls/week, $8-10K/month revenue</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Key Design Decisions</h3>
+                <div class="space-y-3 text-sm">
+                    <div class="p-4 rounded-lg" style="background: #f7f6f3;">
+                        <div class="font-medium mb-1">Show Impact First, Complexity Never</div>
+                        <p style="color: #787774;">Instead of explaining "citations" or "schema markup," we show "+3 ranks" and "+40% traffic." Users don't need to understand SEO, just see results.</p>
+                    </div>
+                    <div class="p-4 rounded-lg" style="background: #f7f6f3;">
+                        <div class="font-medium mb-1">Priority Queue Over Checklist</div>
+                        <p style="color: #787774;">Top 3 actions (not 20) prevents overwhelm. AI prioritizes by impact. Users know exactly what to do next and why it matters.</p>
+                    </div>
+                    <div class="p-4 rounded-lg" style="background: #f7f6f3;">
+                        <div class="font-medium mb-1">One-Click Automation</div>
+                        <p style="color: #787774;">Complex tasks (submit to 50 directories, generate location pages, send review requests) are one button. Manual work that takes 40 hours becomes 30 seconds.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="notion-divider"></div>
+
+        <!-- Reflection -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8">Reflection & Next Steps</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold mb-4">What I Learned</h3>
+                <div class="space-y-3 text-sm">
+                    <p>
+                        This challenge reinforced the importance of <strong>invisible automation</strong> for non-technical users. The temptation was to educate users about SEO—but that's the wrong approach. The best product makes expertise unnecessary.
+                    </p>
+                    <p>
+                        <strong>Measurable impact</strong> drives adoption. When every action shows "+3 ranks" or "+40% traffic," users understand the ROI instantly. This converts SEO from intimidating to empowering.
+                    </p>
+                    <p>
+                        The biggest insight: <strong>Progressive disclosure works.</strong> Showing only top 3 actions prevents paralysis. As users complete actions, new ones appear. This creates momentum instead of overwhelm.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold mb-4">If I Had More Time</h3>
+                <ul class="space-y-2 text-sm" style="color: #787774;">
+                    <li>• <strong>User testing:</strong> Validate that "rank +3" language resonates vs confuses</li>
+                    <li>• <strong>A/B test:</strong> Priority queue vs traditional checklist for completion rates</li>
+                    <li>• <strong>Competitor benchmarking:</strong> Show user's rank vs top 3 competitors specifically</li>
+                    <li>• <strong>Predictive insights:</strong> "You'll reach #1 in 3 weeks if you maintain this pace"</li>
+                    <li>• <strong>Mobile-first design:</strong> Field workers need on-the-go SEO dashboard</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Implementation Roadmap</h3>
+                <div class="space-y-3">
+                    <div class="flex gap-4">
+                        <span class="flex-shrink-0 font-medium text-sm" style="color: #787774;">Phase 1</span>
+                        <div class="text-sm">
+                            <div class="font-medium mb-1">MVP (3 months)</div>
+                            <p style="color: #787774;">Dashboard, citation automation, basic location pages, Google Business Profile integration</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="flex-shrink-0 font-medium text-sm" style="color: #787774;">Phase 2</span>
+                        <div class="text-sm">
+                            <div class="font-medium mb-1">Growth (6 months)</div>
+                            <p style="color: #787774;">Review automation, advanced location pages with AI content, rank tracking, competitive analysis</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="flex-shrink-0 font-medium text-sm" style="color: #787774;">Phase 3</span>
+                        <div class="text-sm">
+                            <div class="font-medium mb-1">AI-Powered (12 months)</div>
+                            <p style="color: #787774;">Predictive SEO, proactive recommendations, voice search optimization, seasonal content automation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="notion-divider"></div>
+
+        <!-- Footer -->
+        <section>
+            <div class="p-8 rounded-lg text-center" style="background: #f7f6f3;">
+                <h3 class="text-xl font-semibold mb-3">About This Design Challenge</h3>
+                <p class="text-sm mb-4" style="color: #787774;">
+                    Created by <strong>Rachel Ramkhelawan</strong> as a product design exercise for the Senior Product Manager role at Durable.
+                    This prototype demonstrates end-to-end product thinking: from user research and problem definition through solution design and business impact analysis.
+                </p>
+                <div class="flex gap-4 justify-center text-sm">
+                    <a href="mailto:rachel.ramkhelawan@gmail.com" class="btn-secondary px-4 py-2 rounded font-medium flex items-center gap-2">
+                        <i data-lucide="mail" class="w-4 h-4"></i>
+                        rachel.ramkhelawan@gmail.com
+                    </a>
+                    <a href="https://linkedin.com/in/rachel-ramkhelawan" class="btn-secondary px-4 py-2 rounded font-medium flex items-center gap-2">
+                        <i data-lucide="linkedin" class="w-4 h-4"></i>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/your-username" class="btn-secondary px-4 py-2 rounded font-medium flex items-center gap-2">
+                        <i data-lucide="github" class="w-4 h-4"></i>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Business data
+        const businesses = {
+            plumber: {
+                name: "Sarah's Plumbing",
+                location: "Austin, TX",
+                localRank: "#3",
+                citations: "24/50",
+                reviews: "4.6★",
+                impressions: "1,247"
+            },
+            photographer: {
+                name: "Mike's Photography",
+                location: "Seattle, WA",
+                localRank: "#5",
+                citations: "18/50",
+                reviews: "4.8★",
+                impressions: "892"
+            },
+            cleaner: {
+                name: "Clean Co.",
+                location: "Denver, CO",
+                localRank: "#2",
+                citations: "31/50",
+                reviews: "4.9★",
+                impressions: "1,534"
+            }
+        };
+
+        // Handle business selector change
+        document.getElementById('businessSelector').addEventListener('change', function(e) {
+            const business = businesses[e.target.value];
+            document.getElementById('localRank').textContent = business.localRank;
+            document.getElementById('citations').textContent = business.citations;
+            document.getElementById('reviews').textContent = business.reviews;
+            document.getElementById('impressions').textContent = business.impressions;
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Update active nav link on scroll
+        window.addEventListener('scroll', () => {
+            const sections = ['problem', 'research', 'solution', 'impact'];
+            let current = '';
+            
+            sections.forEach(section => {
+                const element = document.getElementById(section);
+                if (element && window.scrollY >= element.offsetTop - 100) {
+                    current = section;
+                }
+            });
+            
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
