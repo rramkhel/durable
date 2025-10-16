@@ -301,7 +301,7 @@ const GuardianUpdated = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="max-w-4xl">
             <div className="inline-block px-4 py-1 bg-white/20 rounded-full text-sm font-medium mb-4">
-              Guardian: Your AI Business Coach
+              Durable Guardian: Your AI Business Coach
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-3">Success Dashboard</h1>
             <p className="text-lg text-purple-100 mb-4">

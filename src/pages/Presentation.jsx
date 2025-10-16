@@ -13,7 +13,7 @@ const InterviewPresentation = () => {
         <div className="text-center py-12">
           <div className="mb-8">
             <div className="inline-block px-6 py-2 bg-purple-100 text-purple-700 rounded-full text-lg font-semibold mb-6">
-              Product Manager Application
+              Product Strategy Overview
             </div>
           </div>
           <h1 className="text-5xl font-bold text-gray-900 mb-4">Three AI Features for Durable</h1>
@@ -42,7 +42,7 @@ const InterviewPresentation = () => {
     // Slide 2: The Research Process
     {
       title: "My Research Process",
-      subtitle: "How I identified these opportunities",
+      subtitle: "Identifying user challenges and opportunities",
       content: (
         <div className="space-y-6">
           <div className="bg-white rounded-xl p-6 border-2 border-purple-200">
@@ -59,9 +59,9 @@ const InterviewPresentation = () => {
           <div className="bg-white rounded-xl p-6 border-2 border-blue-200">
             <div className="flex items-center gap-3 mb-3">
               <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">2</div>
-              <h3 className="text-xl font-bold text-gray-900">Job Posting Analysis</h3>
+              <h3 className="text-xl font-bold text-gray-900">Context Analysis</h3>
             </div>
-            <p className="text-gray-700 mb-3">Studied Durable's PM role requirements to understand strategic priorities</p>
+            <p className="text-gray-700 mb-3">Analyzed Durable's mission, user base, and industry landscape to understand strategic priorities</p>
             <div className="bg-blue-50 p-3 rounded">
               <p className="text-sm text-gray-700"><strong>Key Finding:</strong> Focus on retention, AI features, user success</p>
             </div>
@@ -94,7 +94,7 @@ const InterviewPresentation = () => {
 
     // Slide 3: User Segments
     {
-      title: "Understanding Our Users",
+      title: "Understanding Durable's Users",
       subtitle: "70% are service-based businesses",
       content: (
         <div className="space-y-4">
@@ -423,7 +423,7 @@ const InterviewPresentation = () => {
     // Slide 7: Prioritization Framework
     {
       title: "Prioritization Framework",
-      subtitle: "How I chose these three features",
+      subtitle: "Why these features matter + selection methodology",
       content: (
         <div className="space-y-6">
           <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-6">
@@ -756,8 +756,8 @@ const InterviewPresentation = () => {
 
     // Slide 10: Next Steps
     {
-      title: "What I'd Do Next",
-      subtitle: "Validation & iteration plan",
+      title: "Validation & Next Steps",
+      subtitle: "Product development roadmap",
       content: (
         <div className="space-y-6">
           <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-6">

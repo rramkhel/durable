@@ -43,7 +43,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
           <div className="max-w-3xl">
             <div className="inline-block px-4 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm font-medium mb-6">
-              Product Strategy Showcase
+              Product Strategy Study
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Three AI Features for Durable
@@ -60,12 +60,14 @@ const Home = () => {
                 Product Rationale
                 <ArrowRight className="w-4 h-4" />
               </Link>
-              <a
-                href="mailto:rachel.ramkhelawan@gmail.com"
+              <Link
+                to="/guardian"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors font-medium"
               >
-                Get In Touch
-              </a>
+                <Zap className="w-5 h-5" />
+                View Guardian Demo
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
         </div>
@@ -74,17 +76,21 @@ const Home = () => {
       {/* About Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="max-w-3xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">About This Project</h2>
-          <div className="prose prose-lg text-gray-600">
-            <p>
-              I'm applying for the Product Manager role at Durable. Rather than just sending a resume, 
-              I spent a weekend building three AI-powered features that address real user pain points 
-              I discovered through research.
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">About This Project</h2>
+          <div className="prose prose-lg text-gray-700 leading-relaxed">
+            <p className="mb-4">
+              Durable's mission is to make owning a business easier than having a job. But user reviews reveal gaps: "Limited SEO capabilities," "Great for starting but need help growing," "What do I do next?"
             </p>
-            <p className="mt-4">
-              Each feature demonstrates my approach to product management: starting with user research, 
-              validating problems, designing solutions, and projecting business impact. All prototypes 
-              are working, interactive, and aligned with Durable's DIFY (Do It For You) mission.
+            <p className="mb-4">
+              This project addresses those challenges with three AI-powered features built as working prototypes. Each one tackles a real pain point discovered through analysis of 50+ user reviews:
+            </p>
+            <p className="mb-4">
+              <strong>Guardian</strong> predicts churn before users abandon their businesses<br />
+              <strong>Local</strong> automates the SEO expertise service businesses lack<br />
+              <strong>Advisor</strong> provides the strategic guidance users need to succeed
+            </p>
+            <p>
+              The approach: user research → problem validation → AI-native solutions → measurable business impact. Built with Durable's DIFY philosophy at the core—AI that does the work, not just suggests it.
             </p>
           </div>
         </div>
@@ -177,12 +183,6 @@ const Home = () => {
             >
               Read Product Rationale
               <ArrowRight className="w-4 h-4" />
-            </Link>
-            <Link
-              to="/letstalk"
-              className="inline-flex items-center gap-2 px-6 py-3 border-2 border-white text-white rounded-lg hover:bg-white hover:text-purple-600 transition-colors font-medium"
-            >
-              Contact
             </Link>
           </div>
         </div>
